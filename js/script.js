@@ -152,8 +152,20 @@ document.addEventListener('DOMContentLoaded', () => {
             title: "Establishment of Markova Archives",
             description: "The archives are founded to preserve and document survivor testimonies."
         }
-    ];
     
+
+        {
+        year: "2020",
+        title: "Digital Archive Launch",
+        description: "The complete collection becomes available online for researchers worldwide."
+    },
+    {
+        year: "2023",
+        title: "Educational Program",
+        description: "School outreach program launched to teach younger generations."
+    }
+];
+  
     const timelineContainer = document.querySelector('.timeline');
     
     timelineData.forEach((item, index) => {
@@ -271,5 +283,30 @@ document.addEventListener('DOMContentLoaded', () => {
     
     document.querySelectorAll('.timeline-item, .exhibit-card, .resource-card').forEach(el => {
         observer.observe(el);
+    });
+});
+
+// Mobile menu toggle
+const mobileMenuButton = document.querySelector('.mobile-menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+
+mobileMenuButton.addEventListener('click', () => {
+    const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
+    mobileMenuButton.setAttribute('aria-expanded', !isExpanded);
+    navLinks.classList.toggle('active');
+    
+    // Toggle hamburger animation
+    mobileMenuButton.classList.toggle('open');
+    
+    // Prevent body scroll when menu is open
+    document.body.style.overflow = isExpanded ? '' : 'hidden';
+});
+
+// Close menu when clicking a link
+document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        mobileMenuButton.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
     });
 });

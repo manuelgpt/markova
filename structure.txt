@@ -1,4 +1,4 @@
-museum-website/
+markova-archives/
 ├── index.html
 ├── css/
 │   └── style.css
@@ -6,7 +6,13 @@ museum-website/
 │   └── script.js
 └── assets/
     ├── images/
-    │   ├── hero-bg.jpg    (your hero image)
-    │   └── about-placeholder.jpg
-    ├── documents/
-    └── videos/
+    │   ├── hero-bg.avif
+    │   ├── hero-bg.webp
+    │   ├── hero-bg.jpg
+    │   ├── about-placeholder.jpg
+    │   ├── exhibit1.jpg
+    │   ├── exhibit2.jpg
+    │   ├── exhibit3.jpg
+    │   └── social-preview.jpg
+    ├── favicon.svg
+    └── apple-touch-icon.png
