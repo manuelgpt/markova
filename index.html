@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Markova Archives - Preserving the memory of wartime survivors through historical documentation">
+    <title>Markova Archives - Historical Preservation Center</title>
+    
+    <!-- Preload critical assets -->
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" as="style">
+    <link rel="preload" href="assets/images/hero-bg.jpg" as="image">
+    
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="Markova Archives - Historical Preservation Center">
+    <meta property="og:description" content="Preserving the memory of wartime survivors through historical documentation">
+    <meta property="og:image" content="assets/images/social-preview.jpg">
+    <meta property="og:url" content="https://markovaarchives.ph">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" 
+          integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" 
+          crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap">
+</head>
+
+<body>
+    <!-- Skip Navigation -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Navigation -->
+    <nav class="navbar" aria-label="Main navigation">
+        <div class="container">
+            <a href="#" class="logo" aria-label="Markova Archives Home">
+                <span class="logo-icon" aria-hidden="true">📜</span>
+                Markova<span>Archives</span>
+            </a>
+            <button class="mobile-menu-toggle" aria-expanded="false" aria-label="Toggle menu" aria-controls="primary-navigation">
+                <span class="hamburger" aria-hidden="true"></span>
+            </button>
+            <div class="nav-wrapper" id="primary-navigation">
+                <ul class="nav-links">
+                    <li><a href="#about" class="nav-link" data-nav-link>About</a></li>
+                    <li><a href="#timeline" class="nav-link" data-nav-link>Timeline</a></li>
+                    <li><a href="#exhibits" class="nav-link" data-nav-link>Exhibits</a></li>
+                    <li><a href="#resources" class="nav-link" data-nav-link>Resources</a></li>
+                    <li><a href="#contact" class="nav-link" data-nav-link>Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" role="banner">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h1>Preserving Historical Memory</h1>
+                <p class="hero-subtitle">Honoring the Past, Educating the Future</p>
+                <div class="hero-cta">
+                    <a href="#timeline" class="cta-button" aria-label="Explore Historical Timeline">Explore Timeline</a>
+                    <a href="#resources" class="cta-button secondary" aria-label="View Historical Archives">View Archives</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Responsive Hero Image -->
+        <picture>
+            <source srcset="assets/images/hero-bg.avif" type="image/avif">
+            <source srcset="assets/images/hero-bg.webp" type="image/webp">
+            <source srcset="assets/images/hero-bg.jpg" type="image/jpeg"> 
+            <img src="assets/images/hero-bg.jpg" 
+                 alt="Historical documents and photographs from the archives" 
+                 class="hero-bg"
+                 loading="eager"
+                 width="1920"
+                 height="1080"
+                 decoding="async">
+        </picture>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- About Section -->
+        <section id="about" class="section" aria-labelledby="about-heading">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" id="about-heading">About the Memorial</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="about-content">
+                    <article class="about-text">
+                        <p>Inspired by the testimonials of Walterina Markova, a distinct case of sexual slavery by the Imperial Japanese. The Markova Archives serves to collect, preserve, and document all relevant memories of all sexual wartime survivors for public dissemination and future generations.</p>
+                        <p>Spearheaded by Michael Nelmida, who previously served at the National Archives of the Philippines, he is currently finishing his Masters in Human Rights and Democratization at Universitas Gadjah Mada and lectures at University of the Philippines-Mindanao.</p>
+                    </article>
+                    <figure class="about-image">
+                        <img src="assets/images/about-placeholder.jpg" 
+                             srcset="assets/images/about-placeholder@2x.jpg 2x"
+                             alt="Michael Nelmida reviewing historical documents at the archives"
+                             loading="lazy"
+                             width="600"
+                             height="400"
+                             decoding="async">
+                        <figcaption class="image-caption">Michael Nelmida reviewing archival documents</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline Section -->
+        <section id="timeline" class="section dark-bg" aria-labelledby="timeline-heading">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" id="timeline-heading">Historical Timeline</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="timeline" role="region" aria-live="polite">
+                    <!-- Timeline items will be dynamically added via JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Exhibits Section -->
+        <section id="exhibits" class="section" aria-labelledby="exhibits-heading">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" id="exhibits-heading">Featured Exhibits</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="exhibits-grid" role="list">
+                    <!-- Exhibit template for JavaScript -->
+                    <template id="exhibit-template">
+                        <article class="exhibit-card" role="listitem" tabindex="0">
+                            <div class="card-image">
+                                <img src="" alt="" loading="lazy" decoding="async" width="400" height="300">
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title"></h3>
+                                <p class="card-description"></p>
+                                <a href="#" class="card-link" aria-label="Read more about exhibit">View Details</a>
+                            </div>
+                        </article>
+                    </template>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resources Section -->
+        <section id="resources" class="section dark-bg" aria-labelledby="resources-heading">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" id="resources-heading">Historical Resources</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="resources-grid">
+                    <article class="resource-card document">
+                        <div class="resource-icon">
+                            <i class="fas fa-file-pdf" aria-hidden="true"></i>
+                        </div>
+                        <div class="resource-content">
+                            <h3>Archival Documents</h3>
+                            <p>Access primary source materials including personal testimonies, official records, and historical photographs.</p>
+                            <a href="/documents" class="resource-link" aria-label="Browse archival documents">Browse Collection</a>
+                        </div>
+                    </article>
+                    <!-- Add more resource cards -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section" aria-labelledby="contact-heading">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" id="contact-heading">Contact Us</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <form class="contact-form" netlify data-netlify="true">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required 
+                               autocomplete="name"
+                               aria-label="Full Name"
+                               placeholder=" ">
+                        <label for="name">Full Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required
+                               autocomplete="email"
+                               aria-label="Email Address"
+                               placeholder=" ">
+                        <label for="email">Email Address</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" required
+                                  aria-label="Your Message"
+                                  placeholder=" "></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    <div class="form-submit">
+                        <button type="submit" class="cta-button">Send Message</button>
+                        <p class="form-note">We'll respond within 2 business days</p>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <nav aria-label="Footer navigation">
+                        <ul>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#resources">Archives</a></li>
+                            <li><a href="#contact">Visitor Info</a></li>
+                            <li><a href="/privacy">Privacy Policy</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/MarkovaArchives" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+                        <a href="https://x.com/markovaarchives" aria-label="Twitter" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/markovaarchives/" aria-label="instagram" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <form class="newsletter-form">
+                        <div class="form-group">
+                            <input type="email" placeholder="Your email" aria-label="Subscribe to newsletter">
+                            <button type="submit" aria-label="Subscribe">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> Markova Archives. All rights reserved.</p>
+                <p class="credit">Designed with <span aria-hidden="true">♥</span> for historical preservation</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up" aria-hidden="true"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="js/script.js" defer></script>
+</body>
+</html>

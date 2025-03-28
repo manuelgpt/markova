@@ -1,0 +1,12 @@
+museum-website/
+├── index.html
+├── css/
+│   └── style.css
+├── js/
+│   └── script.js
+└── assets/
+    ├── images/
+    │   ├── hero-bg.jpg    (your hero image)
+    │   └── about-placeholder.jpg
+    ├── documents/
+    └── videos/
